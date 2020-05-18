@@ -22,6 +22,7 @@ config.LOG_DIR = ''
 config.DATA_DIR = ''
 config.GPUS = '0'
 config.WORKERS = 4
+config.CPU_WORKERS = 1
 config.PRINT_FREQ = 20
 
 # Cudnn related params
@@ -103,6 +104,7 @@ config.TEST = edict()
 
 # size of images for each device
 config.TEST.BATCH_SIZE = 32
+config.TEST.BATCH_SIZE_CPU = 1
 # Test Model Epoch
 config.TEST.FLIP_TEST = False
 config.TEST.POST_PROCESS = True
